@@ -1,6 +1,4 @@
 #!/usr/bin/perl
-use warnings;
-no warnings;
 
 use strict;
 my $linha;
