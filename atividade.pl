@@ -16,7 +16,7 @@ my $count_poesias = @poesias;
 print("Poesias: $count_poesias\n");
 
 #Versos
-my @versos = ($string =~ /.+\r\n(?!\r\n\r\n[^\r])/gm);
+my @versos = ($string =~ /^(?!ANTONIO JOSE).+\r\n(?!\r\n\r\n[^\r])/gm);
 my @versos2 = ($string =~ /((?!(.+\r\n){2,})O.+)/gs);
 push @versos, $versos2[0];
 my $count_versos = @versos;
@@ -31,13 +31,13 @@ my $count_estrofes = @estrofesmain;
 print("Estrofes: $count_estrofes\n");
 
 #Sextilhas
-my @sextilhas = ($string =~ /\r\n\r\n(.+\r\n){6}\r\n/gm);
-my $count_sextilhas = @sextilhas; 
+my @sextilhas = ($string =~ /(^\r\n(.+\r\n){6}(?!.+\r\n))/gm);
+my $count_sextilhas = @sextilhas/2; 
 print("Sextilhas: $count_sextilhas\n");
 
 #Sonetos
 my @sonetos = ($string =~ /^\r\n\r\n(((.+\r\n){4}\r\n){2}((.+\r\n){3}\r\n){2})\r\n\r\n/gm);
-my $count_sonetos = @sonetos;
+my $count_sonetos = @sonetos/5;
 print("Sonetos: $count_sonetos\n");
 
 #Tamanho médio dos versos.
