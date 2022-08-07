@@ -38,7 +38,7 @@ print("Sextilhas: $count_sextilhas\n");
 #Sonetos
 my @sonetos = ($string =~ /^\r\n\r\n(((.+\r\n){4}\r\n){2}((.+\r\n){3}\r\n){2})\r\n\r\n/gm);
 my $count_sonetos = @sonetos;
-print("Sextilhas: $count_sonetos\n");
+print("Sonetos: $count_sonetos\n");
 
 #Tamanho médio dos versos.
 my $soma_versos = 0;
