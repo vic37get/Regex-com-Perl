@@ -2,7 +2,7 @@
 :camel: Usando a linguagem Perl para obter informações textuais de poemas através do regex.
 
 # Execução
-´python3 atividade.pl´
+`python3 atividade.pl`
 
 ## Funcionamento
 * Script Perl que processa o arquivo texto, o mesmo contém a obra completa de poemas de Machado de Assis. 
