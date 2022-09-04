@@ -1,10 +1,10 @@
 # Regex-com-Perl
 :camel: Usando a linguagem Perl para obter informações textuais de poemas através do regex.
 
-#Execução
+# Execução
 ´python3 atividade.pl´
 
-##Funcionamento
+## Funcionamento
 * Script Perl que processa o arquivo texto, o mesmo contém a obra completa de poemas de Machado de Assis. 
 * O script gera como saída, um relatório com dados sobre a obra completa, no formato especificado a seguir:
 
